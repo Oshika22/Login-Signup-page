@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="formbox">
+
+            <!-- login signin botton setup -->
+            <div class="buttonlogin">
+                <div id="btn"></div>
+                <button type="button" class="toggle" onclick="login()">Login</botton>
+                <button type="button" class="toggle" onclick="signup()">Signup</botton>
+            </div>
+
+            <!-- login form format -->
+            <from id="login" class="inputform1">    
+                <input type="text" class="input" placeholder="username" required>
+                <input type="password" class="input" placeholder="password" required>
+
+                <div class="rme">
+                     <input type="checkbox" value="checked" name="check" id="checkbox"><span>Remember me</span>
+                </div>
+                
+                <input type="submit" value="submit" class="submit-btn">
+
+                <div class="forget-remember"> 
+                    <a href="forget.html" id="forget">Forget password?</a>
+                </div>
+            </from>
+
+            <!-- signup form format -->
+            <from id="signup" class="inputform1">    
+                <input type="text" class="input" placeholder="username" required>
+                <input type="email" class="input" placeholder="email id" required>
+                <input type="password" class="input" placeholder="password" required>
+
+                <div class="rme">
+                    <input type="checkbox" value="checked" name="check" id="checkbox"><span>I agree to the terms and conditions</span>
+                </div>
+                <br>
+                <input type="submit" value="submit" class="submit-btn">
+                </from>
+
+            <!-- social media icons -->
+            <div class="social-icon">
+                <img src="fb.png">
+                <img src="gpp.png">
+                <img src="tw.png">
+            </div>
+
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("signup");
+                var z = document.getElementById("btn");
+
+                function signup(){
+                    x.style.left = "-400px";
+                    y.style.left = "10px";
+                    z.style.left = "100px";
+                }
+
+                function login(){
+                    x.style.left = "10px";
+                    y.style.left = "450px";
+                    z.style.left = "0px";
+                }
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>
